@@ -1,0 +1,20 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <body>
+    <div id="appContainer" class="text">主应用内容</div>
+    <!-- 容器  start -->
+    <div id="container"></div>
+    <!-- 容器  end -->
+  </body>
+  <script src="./mini-wujie.js"></script>
+  <script type="module">
+    window.onload = async function () {
+      try {
+        window.defineWujieWebComponent();
+      } catch (error) {
+        console.error("Error loading module:", error);
+      }
+    };
+  </script>
+</html>
